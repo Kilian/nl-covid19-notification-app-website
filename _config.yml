@@ -30,3 +30,5 @@ exclude:
   - example.content-page.md
   - .sass-cache
   - .history
+
+incremental: true
