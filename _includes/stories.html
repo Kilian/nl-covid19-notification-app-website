@@ -2,20 +2,24 @@
   {% assign stories = site.stories | where:"lang", page.lang | sort: "index" %}
   {% for story in stories %}
   <article class="stories__story" id="statement-{{ statements.index }}">
-    <img
-      src="{{ relroot }}img/story-images/{{ story.graphic }}.svg"
-      alt=""
-      class="stories__story-image"
-    >
-    <h2 class="stories__story-title-small">
-      {{story.title}}
-    </h2>
-    <p class="stories__story-title">
-      {{story.summary}}
-    </p>
-    <p class="stories__story-text">
-      {{ story.content | markdownify }}
-    </p>
+    <div class="stories__story-column-left">
+      <img
+        src="{{ relroot }}img/story-images/{{ story.graphic }}.svg"
+        alt=""
+        class="stories__story-image"
+      >
+    </div>
+    <div class="stories__story-column-right">
+      <h2 class="stories__story-title-small">
+        {{story.title}}
+      </h2>
+      <p class="stories__story-title">
+        {{story.summary}}
+      </p>
+      <p class="stories__story-text">
+        {{ story.content | markdownify }}
+      </p>
+    </div>
   </article>
   {% endfor %}
 </div>
