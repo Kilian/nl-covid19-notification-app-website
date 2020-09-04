@@ -38,31 +38,27 @@
     }
 
     &::after {
-      content: '';
-      background: transparent url(../img/background-right.svg?v=1) no-repeat;
-      background-size: 100%;
-      background-position: center 23px;
-      position: absolute;
-      bottom: 0px;
-      right: 20px;
-      width: 120px;
-      height: 200px;
+        content: '';
+        background: transparent url(../img/background-right.svg?v=1) no-repeat;
+        background-size: 100%;
+        background-position: center 23px;
+        position: absolute;
+        bottom: 0px;
+        right: 20px;
+        width: 120px;
+        height: 200px;
 
-      @media(min-width: 680px) {
-        width: 200px;
-        height: 236px;
-      }
+        @media(min-width: 680px) {
+            width: 200px;
+            height: 236px;
+        }
 
-      @media(min-width: 960px) {
-        right: calc((1100px / -2) + calc(100% / 2));
-        width: 300px;
-        height: 255px;
-      }
-       
+        @media(min-width: 960px) {
+            right: calc((1100px / -2) + calc(100% / 2));
+            width: 300px;
+            height: 255px;
+        }
     }
-
-
-  
 }
 
 .header-yellow--slim {
@@ -156,8 +152,6 @@
 
     @media (min-width: 960px) {
         padding: 0 0 10em 2.6em;
-        margin-right: 200px;
-        min-height: 430px;
     }
 }
 
@@ -173,18 +167,27 @@
     margin-bottom: 1.5em;
     font-size: 28px;
     line-height: 1.16em;
+    max-width: 350px;
 
     @media (min-width: 680px) {
-        width: 100%;
+        max-width: 700px;
         padding-right: 0.5em;
         font-size: 3em;
         margin-bottom: 0.5em;
+    }
+
+    @media (min-width: 960px) {
+        width: 100%;
     }
 }
 
 .header-yellow__logo-badge {
     width: 100px;
-    margin: 1.5em 0;
+    margin: 0 0 1.5em;
+    
+    @media (min-width: 680px) {
+        margin: 1.5em 0;
+    }
 
     @media (min-width: 960px) {
         width: 132px;
