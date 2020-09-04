@@ -31,4 +31,4 @@ exclude:
   - .sass-cache
   - .history
 
-incremental: true
+incremental: false
